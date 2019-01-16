@@ -157,6 +157,8 @@ INSTALLED_APPS = (
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
+
+    'djangocms_attributes_field',
 )
 
 LANGUAGES = (
@@ -222,6 +224,9 @@ CKEDITOR_SETTINGS = {
         {'name': 'Intro Text', 'element': 'p',
          'attributes': {'class': 'mb-3'}
          },
+        {'name': 'CTA Text', 'element': 'p',
+         'attributes': {'class': 'mb-0'}
+         },
         {'name': 'Footer Text', 'element': 'p',
          'attributes': {'class': 'm-0 small'}
          },
@@ -235,4 +240,5 @@ CKEDITOR_SETTINGS = {
 
 DJANGOCMS_PICTURE_TEMPLATES = [
     ('clearfix', ('clearfix')),
+    ('about-heading-image', ('About Heading Image')),
 ]
