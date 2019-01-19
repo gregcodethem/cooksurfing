@@ -159,6 +159,9 @@ INSTALLED_APPS = (
     'cmsplugin_filer_video',
 
     'djangocms_attributes_field',
+    'djangocms_listyle',
+
+    'aldryn_style',
 )
 
 LANGUAGES = (
@@ -221,11 +224,20 @@ CKEDITOR_SETTINGS = {
         {'name': 'Section Header h2', 'element': 'h2',
          'attributes': {'class': 'section-heading mb-4'}
          },
+        {'name': 'Product Section Header h2', 'element': 'h2',
+         'attributes': {'class': 'section-heading mb-0'}
+         },
+        {'name': 'Timetable Section Header h2', 'element': 'h2',
+         'attributes': {'class': 'section-heading mb-5'}
+         },
         {'name': 'Intro Text', 'element': 'p',
          'attributes': {'class': 'mb-3'}
          },
-        {'name': 'CTA Text', 'element': 'p',
-         'attributes': {'class': 'mb-0'}
+        #{'name': 'CTA Text', 'element': 'p',
+         #'attributes': {'class': 'mb-0'}
+         #},
+        {'name': 'CTA Text', 'element': 'ul',
+         'attributes': {'class': 'list-unstyled list-hours mb-5 text-left mx-auto'}
          },
         {'name': 'Footer Text', 'element': 'p',
          'attributes': {'class': 'm-0 small'}
@@ -241,4 +253,5 @@ CKEDITOR_SETTINGS = {
 DJANGOCMS_PICTURE_TEMPLATES = [
     ('clearfix', ('clearfix')),
     ('about-heading-image', ('About Heading Image')),
+    ('product-item-image', ('Product Image')),
 ]
