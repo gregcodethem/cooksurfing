@@ -161,7 +161,7 @@ INSTALLED_APPS = (
     'djangocms_attributes_field',
     'djangocms_listyle',
 
-    'aldryn_style',
+    #'aldryn_style',
 )
 
 LANGUAGES = (
@@ -236,6 +236,18 @@ CKEDITOR_SETTINGS = {
         #{'name': 'CTA Text', 'element': 'p',
          #'attributes': {'class': 'mb-0'}
          #},
+        {'name': 'Upper Heading', 'element': 'span',
+         'attributes': {'class': 'section-heading-upper'}
+         },
+        {'name': 'Upper Heading', 'element': 'h2',
+         'attributes': {'class': 'section-heading mb-0'}
+         },
+        {'name': 'Lower Heading', 'element': 'span',
+         'attributes': {'class': 'section-heading-lower'}
+         },
+        {'name': 'Lower Heading', 'element': 'h2',
+         'attributes': {'class': 'section-heading mb-0'}
+         },
         {'name': 'CTA Text', 'element': 'ul',
          'attributes': {'class': 'list-unstyled list-hours mb-5 text-left mx-auto'}
          },
