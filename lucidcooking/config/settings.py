@@ -28,7 +28,7 @@ SECRET_KEY = 'c%n#lh*53ffhtn^zfgb(+vhq36ekc(as(x4cpj1f2-7ec)o_r*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com']
 
 
 # Application definition
@@ -152,7 +152,7 @@ INSTALLED_APPS = (
     'djangocms_bootstrap4.contrib.bootstrap4_tabs',
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
 
-    'cmsplugin_filer_file',
+    #'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
@@ -234,8 +234,8 @@ CKEDITOR_SETTINGS = {
          'attributes': {'class': 'mb-3'}
          },
         #{'name': 'CTA Text', 'element': 'p',
-         #'attributes': {'class': 'mb-0'}
-         #},
+        #'attributes': {'class': 'mb-0'}
+        #},
         {'name': 'Upper Heading', 'element': 'span',
          'attributes': {'class': 'section-heading-upper'}
          },
