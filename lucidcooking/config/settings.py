@@ -152,7 +152,7 @@ INSTALLED_APPS = (
     'djangocms_bootstrap4.contrib.bootstrap4_tabs',
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
 
-    #'cmsplugin_filer_file',
+    'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
