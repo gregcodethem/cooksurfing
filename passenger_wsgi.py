@@ -14,3 +14,5 @@ sys.path.insert(0,'/home/shellgreg/.envs/lucidcooking/lib/python3.6/site-package
 os.environ['DJANGO_SETTINGS_MODULE'] = "config.settings"
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
+
+if sys.hexversion < 0x2060000: os.execl("/home/shellgreg/.envs/lucidcooking/bin/python", "python3.6", *sys.argv)
