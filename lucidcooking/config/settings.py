@@ -28,7 +28,8 @@ SECRET_KEY = 'c%n#lh*53ffhtn^zfgb(+vhq36ekc(as(x4cpj1f2-7ec)o_r*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com']
+ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -161,6 +162,19 @@ INSTALLED_APPS = (
     'djangocms_attributes_field',
     'djangocms_listyle',
 
+    'djangocms_teaser',
+
+    # you will probably need to add these
+    'aldryn_apphooks_config',
+    'aldryn_categories',
+    'aldryn_common',
+    'aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_translation_tools',
+    'parler',
+    'sortedm2m',
+    'taggit',
+
     #'aldryn_style',
 )
 
@@ -201,7 +215,7 @@ DATABASES = {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'lucidcooking/project.db',
+        'NAME': 'project.db',
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
