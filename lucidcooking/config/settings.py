@@ -164,7 +164,6 @@ INSTALLED_APPS = (
 
     'djangocms_teaser',
 
-    # you will probably need to add these
     'aldryn_apphooks_config',
     'aldryn_categories',
     'aldryn_common',
