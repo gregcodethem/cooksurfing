@@ -246,6 +246,9 @@ CKEDITOR_SETTINGS = {
         {'name': 'Intro Text', 'element': 'p',
          'attributes': {'class': 'mb-3'}
          },
+        {'name': 'Product Text', 'element': 'p',
+         'attributes': {'class': 'mb-0'}
+         },
         #{'name': 'CTA Text', 'element': 'p',
         #'attributes': {'class': 'mb-0'}
         #},
