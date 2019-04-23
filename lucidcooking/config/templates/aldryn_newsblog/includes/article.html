@@ -21,7 +21,8 @@
                 <div class="product-item-title d-flex">
                     <div class="bg-faded p-5 d-flex ml-auto rounded">
                         <h2 class="section-heading mb-4">
-                          <span class="section-heading-upper">Fresh Coffee</span>
+                          <!--<span class="section-heading-upper">{% static_placeholder "over_heading" %}</span>-->
+                          <span class="section-heading-upper">{% render_model article "meta_title" %}</span>
                           <span class="section-heading-lower">
                             {% if not detail_view %}
                                 <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
