@@ -10,13 +10,23 @@
 
     {% static_placeholder "newsblog_social" %}
 
-    <ul>
-        {% if prev_article %}
-            <li><a href="{{ prev_article.get_absolute_url }}">{% trans "Previous Article" %}</a></li>
-        {% endif %}
-        <li><a href="{% namespace_url "article-list" %}">{% trans "Back to Overview" %}</a></li>
-        {% if next_article %}
-            <li><a href="{{ next_article.get_absolute_url }}">{% trans "Next Article" %}</a></li>
-        {% endif %}
-    </ul>
+    <section class="page-section">
+          <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex mr-auto rounded">
+                        <ul>
+                            {% if prev_article %}
+                                <li><a href="{{ prev_article.get_absolute_url }}">{% trans "Previous Recipe" %}</a></li>
+                            {% endif %}
+                            <li><a href="{% namespace_url "article-list" %}">{% trans "Back to Overview" %}</a></li>
+                            {% if next_article %}
+                                <li><a href="{{ next_article.get_absolute_url }}">{% trans "Next Recipe" %}</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
