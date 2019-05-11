@@ -29,6 +29,7 @@ SECRET_KEY = 'c%n#lh*53ffhtn^zfgb(+vhq36ekc(as(x4cpj1f2-7ec)o_r*'
 DEBUG = True
 
 ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com',
+                 'cooking.medialucida.co.uk', 'www.cooking.medialucida.co.uk',
                  '127.0.0.1']
 
 
