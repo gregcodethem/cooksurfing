@@ -3,4 +3,5 @@ tmp
 env
 public
 *.pyc
-__pycache__
+__pycache_
+lucidcooking/project.db_
