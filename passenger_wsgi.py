@@ -1,7 +1,7 @@
 import sys
 import os
 cwd = os.getcwd()
-INTERP = "/home/dh_bg554t/cooking.langato.com/env/bin/python"
+INTERP = cwd+"/env/bin/python"
 # INTERP is present twice so that the new python interpreter
 # knows the actual executable path
 if sys.executable != INTERP:
