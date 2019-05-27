@@ -210,12 +210,22 @@ CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
 
+
+def find_db_location():
+    import os
+    cwd = os.getcwd()
+    if cwd.split('/')[1] is 'home':
+        return 'lucidcooking/project.db'
+    elif cwd.split('/')[1] is 'Users':
+        return 'project.db'
+
+
 DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'lucidcooking/project.db',
+        'NAME': 'project.db',
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
