@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c%n#lh*53ffhtn^zfgb(+vhq36ekc(as(x4cpj1f2-7ec)o_r*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com',
                  'cooking.medialucida.co.uk', 'www.cooking.medialucida.co.uk',
@@ -176,6 +176,8 @@ INSTALLED_APPS = (
     'taggit',
 
     #'aldryn_style',
+
+    'djangocms_youtube',
 )
 
 LANGUAGES = (
@@ -294,3 +296,5 @@ DJANGOCMS_PICTURE_TEMPLATES = [
     ('about-heading-image', ('About Heading Image')),
     ('product-item-image', ('Product Image')),
 ]
+
+DJANGOCMS_YOUTUBE_API_KEY = 'AIzaSyC8RecKwNZs9FxN23z1MyUE_kh28lYBWc4'
