@@ -1,7 +1,8 @@
-*.DB_Store
+*.DS_Store
 tmp
 env
 public
 *.pyc
 __pycache_
 lucidcooking/project.db_
+photos-to-upload
