@@ -23,14 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c%n#lh*53ffhtn^zfgb(+vhq36ekc(as(x4cpj1f2-7ec)o_r*'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = int(os.environ.get('DEBUG', default=0))
 
 ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com',
                  'cooking.medialucida.co.uk', 'www.cooking.medialucida.co.uk',
-                 '127.0.0.1']
+                 '127.0.0.1','localhost', '192.168.99.100']
 
 
 # Application definition
@@ -161,7 +161,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_video',
 
     'djangocms_attributes_field',
-    'djangocms_listyle',
+    #'djangocms_listyle',
 
     'djangocms_teaser',
 
