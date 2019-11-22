@@ -4,3 +4,5 @@ env
 public
 *.pyc
 __pycache__
+lucidcooking/project.db
+lucidcooking/config/env.py

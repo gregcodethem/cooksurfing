@@ -15,22 +15,23 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+from .env import SECRET_KEY
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+project_dir_name = 'lucidcooking'
+WEB_BASE_DIR = BASE_DIR[:-len(project_dir_name)]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c%n#lh*53ffhtn^zfgb(+vhq36ekc(as(x4cpj1f2-7ec)o_r*'
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['cooking.langato.com', 'www.cooking.langato.com',
+ALLOWED_HOSTS = ['.cooking.langato.com', 'www.cooking.langato.com',
                  'cooking.medialucida.co.uk', 'www.cooking.medialucida.co.uk',
-                 '127.0.0.1']
+                 '.cooksurfing.co.uk']
 
 
 # Application definition
@@ -58,8 +59,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
-STATIC_ROOT = os.path.join(DATA_DIR, 'public/static')
+MEDIA_ROOT = os.path.join(WEB_BASE_DIR, 'public', 'media')
+STATIC_ROOT = os.path.join(WEB_BASE_DIR, 'public', 'static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'config', 'static'),
