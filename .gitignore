@@ -3,6 +3,6 @@ tmp
 env
 public
 *.pyc
-__pycache_
-lucidcooking/project.db_
+__pycache__
+lucidcooking/project.db
 photos-to-upload

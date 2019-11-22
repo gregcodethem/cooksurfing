@@ -177,7 +177,7 @@ INSTALLED_APPS = (
 
     #'aldryn_style',
 
-    'djangocms_youtube',
+    #'djangocms_youtube',
 
     'functional_tests',
 )
