@@ -207,6 +207,8 @@ CMS_TEMPLATES = (
     ('fullwidth.html', 'Fullwidth'),
 )
 
+
+
 CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
@@ -216,7 +218,7 @@ DATABASES = {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'lucidcooking/project.db',
+        'NAME': os.path.join(WEB_BASE_DIR,'data','project.db'),
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
