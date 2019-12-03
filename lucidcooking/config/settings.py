@@ -26,7 +26,7 @@ WEB_BASE_DIR = BASE_DIR[:-len(project_dir_name)]
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+
 DEBUG = False
 
 ALLOWED_HOSTS = ['.cooking.langato.com', 'www.cooking.langato.com',
@@ -207,6 +207,8 @@ CMS_TEMPLATES = (
     ('fullwidth.html', 'Fullwidth'),
 )
 
+
+
 CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
@@ -216,7 +218,7 @@ DATABASES = {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'lucidcooking/project.db',
+        'NAME': os.path.join(WEB_BASE_DIR,'data','project.db'),
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
