@@ -61,7 +61,7 @@ webencodings = "==0.5.1"
 Babel = "==2.6.0"
 backport_collections = "==0.1"
 Django = ">=1.11.23,<2"
-Pillow = "==5.4.1"
+Pillow = ">=6.2,<7"
 Unidecode = "==1.0.23"
 YURL = "==0.13"
 
